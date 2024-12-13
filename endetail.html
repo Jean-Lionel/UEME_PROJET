@@ -1,0 +1,137 @@
+<html lang="en">
+<head>  
+    <title>UEME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slide()">  
+    <section class="header">
+        <header>
+            <h2 class="logo"><a href="index.html"><img src="image/UEME.png" style="height: 70px; width: 70px"></a></h2>
+                <nav class="navigation">
+                
+                    <a href="index.html" class="ind">ACCUEIL</a>
+                    <a href="relation.html" class="ind">RELATION</a>
+                    <a href="acheter.html" class="ind">ACHETER</a>
+                    <a href="paiement.html" class="ind">PAEMENT</a>
+                    <a href="reservation.html" class="ind">RESERVATION</a>
+                    <a href="compte.html"><button class="btnlogo">Connecte</button></a>
+                
+                </nav>
+        </header> 
+    </section> 
+        
+        <div class="barnner">
+            <div class="slider">
+                <img src="./image/tanganyika.jpg" id="slidImg">
+            </div>
+            <div class="overlay">
+                <div class="content">
+                        <h3><br><br><span>UEME </span> <br><br><br>
+            UEME n'urubuga rufasha guhuza abadandaza bo mubihugu bitandukanye kw'isi yose.</br>
+            Rukorohereza na ba client kuronka ibidandazwa muburyo bworoshe ndetse,</br>
+            rugahuza abadandaza naba client vyoroshe.</h3> 
+                    
+                    <div>
+                        <a href="reservation.html" ><button>RESERVER</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+            var slider = document.getElementById("slidImg")
+            var images = new Array(
+                "./image/19.jpg",
+                "./image/20.jpg",
+                "./image/20.jpg",
+                "./image/21.jpg",
+                "./image/21.jpg",
+                "./image/19.jpg",
+                );
+            var len = images.length;
+            var i = 0;
+            function slide(){
+                if(i>len-1){
+                    i=0
+                }
+                slider.src=images[i]
+                i++;
+                setTimeout('slide()',5000);
+            }
+    </script> 
+        
+    <!----------------Gabriel--------->
+    <section class="course">
+        <h1>Entrepreneur Gabriel</h1>
+        <p>Gabriel ni umudandaza murimyi akomeye cane wo mugihugu c'urwanda.
+        Bimwe mubikorwa asanzwe akora n'ibi bikurikira:</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Amatunda</h3>
+                <img src="image/20.jpg" width="100%" height="50%">
+                <p>Dufise amatunda yakanovera, asosa kandi arimwo indema mubiri zikwiriye.
+                Abavyeyi mufise abana murahawe ikaze, akabeyi ntikavuna nagato</p>
+                <li><a href="acheter.html">En detail</a></li>
+            </div>
+
+            <div class="course-col">
+                <h3>Ibigori</h3>
+                <img src="image/21.jpg" width="100%" height="50%">
+                <p>Dufise Ibigori vyiza, bisosa kandi bivamwo ifu nziza. Ifu ivyibusha abana n'abakuze
+                    bakagira amagara meza bavyeyi murahawe ikaze murisanze.</p>
+                    <li><a href="acheter.html">En detail</a></li>
+            </div>
+
+            <div class="course-col">
+                <h3>Inanasi</h3>
+                <img src="image/18.jpg" width="100%" height="50%">
+                <p>Dufise Inanasi yakanovera, asosa kandi arimwo indema mubiri zikwiriye.
+                Abavyeyi mufise abana murahawe ikaze, akabeyi ntikavuna nagato</p>
+                <li><a href="acheter.html">En detail</a></li>
+            </div>
+            
+
+        </div>
+
+    </section>
+         <!-----------------------------FOOTER--------------------------------------->
+         <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>TELEPHONE</h4>
+                        <ul>
+                            
+                            <li><a href="#">+257 61676148</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Email</h4>
+                        <ul>
+                            <li><a href="#">iradukundajeanine@gmail.com</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Adresse</h4>
+                        <ul>
+                            <li><a href="#">Gihosha</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Web site</h4>
+                        <ul>
+                            <li><a href="#">www.ueme.com</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </footer>  
+</body>
+</html>

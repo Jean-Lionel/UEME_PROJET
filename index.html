@@ -1,0 +1,251 @@
+<html lang="en">
+<head>  
+    <title>UEME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slide()">  
+    <section class="header">
+        <header>
+            <h2 class="logo"><a href="index.html"><img src="image/UEME.png" style="height: 70px; width: 70px"></a></h2>
+                <nav class="navigation">
+                
+                    <a href="index.html" class="ind">ACCUEIL</a>
+                    <a href="relation.html" class="ind">RELATION</a>
+                    <a href="acheter.html" class="ind">ACHETER</a>
+                    <a href="paiement.html" class="ind">PAEMENT</a>
+                    <a href="reservation.html" class="ind">RESERVATION</a>
+                    <a href="compte.html"><button class="btnlogo">Connecte</button></a>
+                </nav>
+        </header> 
+    </section> 
+        
+        <div class="barnner">
+            <div class="slider">
+                <img src="./image/tanganyika.jpg" id="slidImg">
+            </div>
+            <div class="overlay">
+                <div class="content">
+                        <h3><br><br><span>UEME </span> <br><br><br>
+            UEME n'urubuga rufasha guhuza abadandaza bo mubihugu bitandukanye kw'isi yose.</br>
+            Rukorohereza na ba client kuronka ibidandazwa muburyo bworoshe ndetse,</br>
+            rugahuza abadandaza naba client vyoroshe.</h3> 
+                    
+                    <div>
+                        <a href="reservation.html" ><button>RESERVER</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+            var slider = document.getElementById("slidImg")
+            var images = new Array(
+                "./image/19.jpg",
+                "./image/20.jpg",
+                "./image/20.jpg",
+                "./image/21.jpg",
+                "./image/21.jpg",
+                "./image/19.jpg",
+                );
+            var len = images.length;
+            var i = 0;
+            function slide(){
+                if(i>len-1){
+                    i=0
+                }
+                slider.src=images[i]
+                i++;
+                setTimeout('slide()',5000);
+            }
+    </script> 
+        
+ <!----------------Gabriel--------->
+ <section class="course">
+    <h1>Entrepreneur Gabriel</h1>
+    <p>Gabriel ni umudandaza murimyi akomeye cane wo mugihugu c'urwanda.
+    Bimwe mubikorwa asanzwe akora n'ibi bikurikira:</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Amatunda</h3>
+            <img src="image/20.jpg" width="100%" height="50%">
+            <p>Dufise amatunda yakanovera, asosa kandi arimwo indema mubiri zikwiriye.
+            Abavyeyi mufise abana murahawe ikaze, akabeyi ntikavuna nagato</p>
+            <li><a href="acheter.html">En detail</a></li>
+        </div>
+
+        <div class="course-col">
+            <h3>Ibigori</h3>
+            <img src="image/21.jpg" width="100%" height="50%">
+            <p>Dufise Ibigori vyiza, bisosa kandi bivamwo ifu nziza. Ifu ivyibusha abana n'abakuze
+                bakagira amagara meza bavyeyi murahawe ikaze murisanze.</p>
+                <li><a href="acheter.html">En detail</a></li>
+        </div>
+
+        <div class="course-col">
+            <h3>Inanasi</h3>
+            <img src="image/18.jpg" width="100%" height="50%">
+            <p>Dufise Inanasi yakanovera, asosa kandi arimwo indema mubiri zikwiriye.
+            Abavyeyi mufise abana murahawe ikaze, akabeyi ntikavuna nagato</p>
+            <li><a href="acheter.html">En detail</a></li>
+        </div>
+        
+
+    </div>
+
+</section>
+
+<!---------------------Relation-->
+
+<section class="Campus">
+    <h1>Nos Entrepreurs</h1>
+    <p>Kaze umenye abo mushobora guhana ibidandazwa atankomanzi.</p>
+
+    <div class="row">
+
+        <div class="campus-col">
+            <img src="image/6.jpg">
+
+            <div class="layer">
+                <h3>Gabriel<li><a href="relation.html">Voir</a></li></h3>
+
+            </div>   
+
+        </div>
+
+        <div class="campus-col">
+            <img src="image/16.jpg">
+
+            <div class="layer">
+                <h3>Annabelle<li><a href="relation.html">Voir</a></li></h3>
+
+            </div>   
+
+        </div>
+
+        <div class="campus-col">
+            <img src="image/5.jpg">
+
+            <div class="layer">
+                <h3>Patrice<li><a href="relation.html">Voir</a></li></h3>
+
+            </div>   
+
+        </div>
+
+    </div>
+
+</section>
+<!---------------------Paiement-->
+
+<section class="faculite">
+
+    <h1>Paiement</h1>
+    <h2>Uburyo Bworoshe mukuriha</h2>
+    <p>Twarabazaniye uburyo bwiza bwo kuriha aho muba muriho hose. 
+        Tubafitiye Carte ya UEME ikorana na ma Bank yose.
+    </p>
+
+    <div class="row">
+
+        <div class="faculte-col">
+            <img src="image/12.jpg" >
+            <h3>Carte UEME</h3>
+            <p>Murashobora gukoresha uburyo bwa carte yacu ya UEME mu kuriha.</p>
+            <li><a href="">En detail</a></li>
+        </div>
+
+        <div class="faculte-col">
+            <img src="image/14.jpg">
+            <h3>InterBank</h3>
+             <p>Murashobora gukoresha uburyo bwa carte ya InterBank mu kuriha.</p>
+             <li><a href="">En detail</a></li>
+        </div>
+
+        <div class="faculte-col">
+            <img src="image/13.jpg" >
+            <h3>CRD Bank</h3>
+            <p>Murashobora gukoresha uburyo bwa Carte ya CRD Bank mu kuriha.</p>
+            <li><a href="">En detail</a></li>
+        </div>
+    </div>    
+
+
+
+</section>
+ <!---------------------Compte-->
+
+ <section class="compte">
+
+    <h1>Izina</h1>
+    <p>Ushaka kumenyekanisha ibikorwa vyawe urashobora kugurura ikonte yawe.</p>
+
+    <div class="row">
+        <div class="compte-col">
+            <img src="image/16.jpg" >
+            <div>
+                <p>Nivyiza kuba ufise compte vyorosha kudandaza no kumenyana
+                     n'abandi badandaza bipfuza ibidandazwa vyawe.
+                    </p>
+                    <li><a href="#"class="ind">Jeanine</a></li>
+            </div>
+        </div>
+        
+        <div class="compte-col">
+            <img src="image/6.jpg" >
+            <div>
+                <p>Nivyiza kuba ufise compte vyorosha kudandaza no kumenyana
+                     n'abandi badandaza bipfuza ibidandazwa vyawe.
+                    </p>
+                     <li><a href="#"class="ind">Peter</a></li>
+            </div>
+        </div>  
+    </div>
+ </section>
+ <!---------------------Reservation-->
+ <section class="Reservation">
+    <h1>Biroroshe kugura no kudadarize kumu rongo
+         aho uherereye hose</h1>
+         <a href="reservation.html" ><button>Contactons-Nous</button></a>
+
+ </section>
+     <!-----------------------------FOOTER--------------------------------------->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>TELEPHONE</h4>
+                    <ul>
+                        
+                        <li><a href="#">+257 61676148</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Email</h4>
+                    <ul>
+                        <li><a href="#">iradukundajeanine@gmail.com</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Adresse</h4>
+                    <ul>
+                        <li><a href="#">Gihosha</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Web site</h4>
+                    <ul>
+                        <li><a href="#">www.ueme.com</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>  
+</body>
+</html>
